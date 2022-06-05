@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 .contact {
-    display: inline-block;
+    /* display: inline-block; */
     padding-left: 10px;
     padding-top: 32px;
     padding-bottom: 32px;
