@@ -205,9 +205,11 @@ h1, h2, h3, h4, h5, h6, p{
 
 .nav-link:hover, .contact:hover, .footer-contact:hover {
     color: var(--accent-color);
+     fill: var(--accent-color);
 }
 .nav-link:focus, .contact:focus, .footer-contact:focus {
     color: var(--accent-color);
+    fill:  var(--accent-color);
 }
 
 .site-nav .nav-link.current {
