@@ -531,9 +531,42 @@ footer {
     color: var(--color-white);
 }
 
-.container footer {
+.container.footer {
     display: flex;
 }
+
+.icon-footer {
+    text-align: center;
+}
+
+
+.icon-socnet-fot {
+    width: 44px;
+    height: 44px;
+    /* border: 1px solid var(--color-icon); */
+    border-radius: 50%;
+    background-position: center;
+    fill: var(--color-white);
+    background-color: var(--primaty-text-color);
+
+    padding: 12px;
+    margin-right: 10px;
+
+}
+
+.icon-socnet-fot:last-child {
+    margin-right: 0;
+}
+
+.icon-socnet-fot:hover {
+
+    fill: var(--color-white);
+    background-color: var(--accent-color);
+}
+
+/* .icon-footer {
+
+} */
 
 /* portfolio.html */
 
