@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
-.contact {
+.contact  {
     /* display: inline-block; */
     padding-left: 10px;
     padding-top: 32px;
@@ -183,12 +183,18 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--primaty-text-color);
     font-weight: 500;
     font-size: 14px;
+    display: flex;
+    align-items: center;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     
 }
 
+.icon-cont {
+    color: var (--primaty-text-color);
+    margin-right: 10px;
+}
 
 /* .contact.mail::before {
     display: inline-block;
@@ -355,6 +361,12 @@ background-image: url("../images/det.svg");
     background-color: var(--secondary-background-color) ;
 
  }
+ .team-card {
+     display: block;
+     padding-top: 30px;
+     padding-bottom: 30px;
+
+ }
 
 .team-title {
     margin-top: 0;
@@ -375,8 +387,14 @@ background-image: url("../images/det.svg");
     margin-right: 0;
 }
 
+.team-list.item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
 .title-team {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -387,7 +405,7 @@ background-image: url("../images/det.svg");
  }
 .text-team {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -396,11 +414,12 @@ background-image: url("../images/det.svg");
 
 .list-socnet {
     display:flex;
-    padding:0;
-    margin-top: 16px;
-    margin-bottom: 30px;
+    
+    /* margin-top: 16px;
+    /* margin-bottom: 30px; 
+    /* justify-content: center; 
     margin-left: 32px;
-    margin-right: 32px;
+    /* margin-right: 32px;  */ 
     
    
 }
@@ -408,12 +427,9 @@ background-image: url("../images/det.svg");
 .icon-socnet {
     width: 44px;
     height: 44px;
-    /* border: 1px solid var(--color-icon); */
-    border-radius: 50%;
+    border-radius: 50%; 
     background-position: center;
     fill: var(--color-icon);
-
-    padding: 12px;
     margin-right: 10px;
 
 }
@@ -422,18 +438,27 @@ background-image: url("../images/det.svg");
 }
 
 .icon-socnet:hover {
-    
     fill: var(--color-white);
     background-color: var(--accent-color);
 }
 
 /* Section Client */
 
-.client-title{
+.client-title {
     margin-bottom: 50px;
 }
 .client-list {
     display: flex;
+}
+
+.client-list .item {
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+
+.client-list .item:last-child {
+    margin-right: 0;
 }
 
 /* .client-list.item {
@@ -441,8 +466,11 @@ background-image: url("../images/det.svg");
 } */
 .icon-client {
     display: inline-block;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /* width: 170px;
+    height: 92px; */
     border:1px solid var(--color-icon);
     border-radius: 4px;
     fill: var(--color-icon);
@@ -533,6 +561,7 @@ footer {
 
 .container.footer {
     display: flex;
+    align-items: baseline;
    
 }
 
@@ -540,6 +569,10 @@ footer {
     text-align: center;
 }
 
+.list-socnet {
+    /* margin: 0;
+    padding: 0; */
+}
 
 .icon-socnet-fot {
     width: 44px;
@@ -548,7 +581,7 @@ footer {
     border-radius: 50%;
     background-position: center;
     fill: var(--color-white);
-    background-color: var(--primaty-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
 
     padding: 12px;
     margin-right: 10px;
@@ -630,7 +663,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 
 .portfolio-title {
-    /* border: 1px solid #EEEEEE; */
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
