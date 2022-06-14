@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .icon-cont {
-    color: var (--primaty-text-color);
+   
     margin-right: 10px;
 }
 
@@ -403,43 +403,50 @@ background-image: url("../images/det.svg");
 
 .list-socnet {
     display:flex;
-    
+    padding: 0;
+    justify-content: center;
+
    
 }
 
-.icon-socnet {
-    display:block;
+.icon-socnet .icon-link {
+    /* display:flex; */
     width: 44px; 
     height: 44px;
     border-radius: 50%; 
-    /* align-items: center; */
-    /* background-position: center; */
-   
-    fill: var(--color-icon);
-    
+    /* align-items: center; 
+    background-position: center; */
+    padding: 12px;
+    margin-right: 10px;
+    /* fill: var(--color-icon); */
+    justify-content: center;
+    align-items: center;
 
 }
-.icon-socnet:last-child{
+.icon-socnet .icon-link:last-child{
     margin-right: 0;
 }
 
-.icon-socnet:hover{
+.icon-socnet .icon-link {
+    fill: var(--color-icon);
+}
+.icon-socnet .icon-link:hover {
     fill: var(--color-white);
     background-color: var(--accent-color);
 }
 
-.icon-socnet> .icon-link {
-    display: block;
-    width: 100%;
+/* .icon-socnet> .icon-link {
+    /* width: 100%;
     height: 100%;
-    color: #2F303A;
-    padding-right: 10px;
+    /* color: #2F303A; */
+    
+    /* padding-right: 10px; */ */
     
    
-}
+/* }
 .icon-socnet > .icon-link:last-child{
     padding-right: 0;
-}
+} */ 
 
 
 /* Section Client */
@@ -562,6 +569,9 @@ footer {
     margin-top: 20px;
     font-style: normal;
 }
+.address-li {
+    padding-right: 70px;
+}
 
 .address-li .item {
     margin-bottom: 9px ;
@@ -581,6 +591,9 @@ footer {
    
 }
 
+.title-soc-foot{
+    text-align: left;
+}
 .icon-footer {
     text-align: center;
 }
@@ -595,12 +608,16 @@ footer {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: var(--color-white);
+    
     background-color: rgba(255, 255, 255, 0.1);
 
     padding: 12px;
     margin-right: 10px;
 
+}
+
+.icon-socnet-fot .icon-link {
+fill: var(--color-white);
 }
 
 .icon-socnet-fot:last-child {
