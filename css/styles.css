@@ -517,6 +517,10 @@ background-image: url("../images/det.svg");
     background-color: #188CE8;
 }
 
+.button:focus {
+    background-color: #188CE8;
+}
+
 /* футер */
 .footer-contact {
     color: var(--color-white-transparency);
